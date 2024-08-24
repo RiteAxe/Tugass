@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24-08-2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "tJkJDVWIz8HWS-ULx",
+      });
+   })();
+</script>
+</head>
+<body>
+    <div class="container">
+        <div class="text" id="text">hii How's your day?:)</div>
+        <div class="buttons">
+            <div class="btn" id="goodBtn">Good</div>
+            <div class="btn" id="notGoodBtn">Not Good</div>
+        </div>
+        <div class="response" id="response">
+            <div id="responseText"></div>
+        </div>
+    </div>
+    <button class="pink-button" id="pinkButton">Click Me</button>
+    <div class="letter" id="letter">
+        <p>Hey Esther,</p>
+        <p>As you know, we’ve been friends for a while now, and I really value our friendship. I wanted to be honest with you and let you know that I’ve developed feelings for you since the first time we met. I completely understand if this comes as a surprise or if you don’t feel the same way.</p>
+        <p>I don’t want to make you feel uncomfortable or put you in a difficult position. I just felt it was important to share my feelings with you and see if we might explore the possibility of being more than friends. If you need time to think about it, that’s absolutely okay. I’m open to having a conversation about it if you’re interested. But if you don’t feel the same way, that’s fine too. I hope we can continue our friendship as it is and that nothing changes between us.</p>
+        <p>Thank you for reading this and will you be my girlfriend?:D</p>
+    </div>
+    <div class="letter-buttons" id="letterButtons">
+        <button class="letter-btn" id="yesBtn">Yes</button>
+        <button class="letter-btn" id="noBtn">No</button>
+    </div>
+    <div id="noResponseText" class="hidden-text">Out of Order :D</div>
+    <script src="script.js"></script>
+</body>
+</html>

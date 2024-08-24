@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
     thankYouMessage.style.color = '#fff';
     thankYouMessage.style.textAlign = 'center';
     thankYouMessage.style.marginTop = '20px';
+    thankYouMessage.id = 'thankYouMessage'; // Assign ID for CSS styling
     document.body.appendChild(thankYouMessage);
 
     // Setup chat button
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     chatButton.style.borderRadius = '5px';
     chatButton.style.cursor = 'pointer';
     chatButton.style.marginTop = '20px';
+    chatButton.id = 'chatButton'; // Assign ID for CSS styling
     chatButton.onclick = function() {
         window.location.href = "https://wa.me/62085810526932";
     };
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 3000);
 
     document.getElementById('goodBtn').addEventListener('click', function() {
-        responseText.innerHTML = "I'm happy to hear that <br> I have something that I need to tell you.:D";
+        responseText.innerHTML = "Thats greatt <br> I have something that I need to tell you.:D";
         responseDiv.style.display = 'block';
         hideInitialContent();
 
@@ -90,20 +92,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Typing animation for the letter content
     const letterText = `
-        Hey Esther,
+        Haii Esther,
 
-        As you know, we’ve been friends for a while now, and I really value our friendship. 
-        I wanted to be honest with you and let you know that I’ve developed feelings for you since the first time we met. 
-        I completely understand if this comes as a surprise or if you don’t feel the same way.
+        I've been wanting to talk to you about this. So kita kan udah temenan dari Januari, yaa ga terlalu lama sii wkwkwk. 
+        Waktu itu pas PMR aku pertama kali ngeliat kamu pas foto pengurus truss besoknya kamu yang mimpin renungan pagi, 
+        aku jadi penasaran jadi aku coba nge-DM kamu. Since then, I've realized I have feelings for you.
 
-        I don’t want to make you feel uncomfortable or put you in a difficult position. 
-        I just felt it was important to share my feelings with you and see if we might explore the possibility of being more than friends. 
-        If you need time to think about it, that’s absolutely okay. 
-        I’m open to having a conversation about it if you’re interested. 
-        But if you don’t feel the same way, that’s fine too. 
-        I hope we can continue our friendship as it is and that nothing changes between us.
+        So I just want to tell you that I have a crush on you. I find you really cute from the way you smile, talk, and everything. 
+        I hope we can be more than friends. It's okay too if you don't feel the same way.
 
-        Thank you for reading this and will you be my girlfriend?:D
+        So will you be my girlfriend?:D
     `;
 
     function typeWriter(text, i) {
@@ -111,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
             letter.innerHTML += text.charAt(i);
             setTimeout(function() {
                 typeWriter(text, i + 1);
-            }, 10); // Adjust typing speed by changing the delay (in milliseconds)
+            }, 50); // Adjust typing speed by changing the delay (in milliseconds)
         } else {
             letterButtons.style.display = 'flex'; // Ensure display is set to flex
             letterButtons.style.visibility = 'visible'; // Show the letter buttons after typing animation completes

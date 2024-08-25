@@ -133,8 +133,5 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Show the thank you message
         thankYouMessage.style.display = 'block';
-
-        // Show the chat button
-        chatButton.style.display = 'inline-block';
     });
 });
